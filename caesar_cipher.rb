@@ -1,8 +1,7 @@
 #ASCII codes for Enhlish alphabet are in range of 097 to 122 (downcase)
 #and 065 to 090 (uppercase). Common signs are between 032 and 063.
 
-def caesar_cipher(string, shift)
-  letters_in_ascii = []
+def caesar_cipher(string, shift, letters_in_ascii = [])
   string.each_byte { |letter| letters_in_ascii.push(letter) }
   if letters_in_ascii.all? { |letter| letter.between?(65, 90) || letter.between?(97, 122) || letter.between?(32, 63)} 
     cyphered_letters_in_ascii = letters_in_ascii.map do |letter|
