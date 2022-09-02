@@ -33,5 +33,3 @@ def terminal_interface_cc()
   shift = gets.chomp.to_i
   puts caesar_cipher(string, shift)
 end
-
-terminal_interface_cc
